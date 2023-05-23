@@ -1,0 +1,15 @@
+.logo {
+  @include alignLeft;
+  margin: 50px;
+  width: 200px;
+  padding: 5px 0;
+  // background: url(../../assets/img/main.png) center/cover;
+
+  img {
+    height: 30px;
+  }
+  h3 {
+    margin-left: 10px;
+    color: $color-1;
+  }
+}
