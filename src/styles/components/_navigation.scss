@@ -2,17 +2,19 @@
   ul {
     display: flex;
     justify-content: flex-end;
-    margin: 30px;
+    margin: 50px 100px;
 
     a {
       text-decoration: none;
-      padding: 10px 10px 2px 10px;
+
+      padding: 0px 20px;
 
       li {
         color: $color-1;
+        display: inline-block;
         transition: 0.2s;
         cursor: pointer;
-
+position: relative;
         &:hover {
           color: $color-1;
         }
@@ -25,7 +27,7 @@
       &::after {
         content: "";
         height: 1px;
-        width: 0;
+        width: 0%;
         background: $color-1;
         position: absolute;
         border-radius: 0px;
@@ -37,12 +39,12 @@
 
         @-webkit-keyframes anim {
           to {
-            width: 100%;
+            width: 65%;
           }
         }
         @keyframes anim {
           to {
-            width: 100%;
+            width: 65%;
           }
         }
       }

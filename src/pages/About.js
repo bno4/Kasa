@@ -1,10 +1,10 @@
 import React from 'react'
-import Navigation from '../components/Navigation'
+import Header from '../components/Header'
 
 const About = () => {
   return (
     <div>
-      <Navigation />
+      <Header />
       <h1>A propos</h1>
       <p>
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis
