@@ -1,6 +1,5 @@
 .logo {
   @include alignLeft;
-  margin: 50px 100px;
   width: 115px;
   padding: 5px 0;
   // background: url(../../assets/img/main.png) center/cover;
@@ -10,6 +9,6 @@
   }
   h3 {
     margin-left: 10px;
-    color: $color-1;
+    color: $color-red
   }
 }

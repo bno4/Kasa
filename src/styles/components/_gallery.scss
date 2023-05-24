@@ -1,0 +1,16 @@
+.gallery {
+  margin-left:100px; 
+  margin-right:100px;
+  display: grid;
+  grid-gap :10px;
+  background-color: $color-2;
+  padding:50px;
+  border-radius: 25px;
+
+  ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(300px, 1fr));
+  
+    grid-gap:30px;
+  }
+}

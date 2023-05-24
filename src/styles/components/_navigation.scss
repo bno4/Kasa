@@ -2,7 +2,6 @@
   ul {
     display: flex;
     justify-content: flex-end;
-    margin: 50px 100px;
 
     a {
       text-decoration: none;
@@ -10,13 +9,13 @@
       padding: 0px 20px;
 
       li {
-        color: $color-1;
+        color: $color-red;
         display: inline-block;
         transition: 0.2s;
         cursor: pointer;
 position: relative;
         &:hover {
-          color: $color-1;
+          color: $color-red;
         }
       }
     }
@@ -28,7 +27,7 @@ position: relative;
         content: "";
         height: 1px;
         width: 0%;
-        background: $color-1;
+        background: $color-red;
         position: absolute;
         border-radius: 0px;
         bottom: 0px;

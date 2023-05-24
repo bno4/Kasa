@@ -1,11 +1,16 @@
 import React from 'react'
 import Header from '../components/Header'
+import Footer from '../components/Footer'
+import Gallery from '../components/Gallery'
+import Banner from '../components/Banner'
 
 const Home = () => {
   return (
     <div>
       <Header />
-      <h1>Accueil</h1>
+      <Banner />
+      <Gallery />
+      <Footer />
     </div>
   )
 }
