@@ -4,7 +4,7 @@
   width: 335px;
   border-radius: 10px;
   transition: 0.3s;
-  background: rgb(255,96,96);
+
 
   h2 {
     font-size: 18px;
@@ -12,23 +12,22 @@
 
   .infos {
     position: absolute;
-    padding: 10px;
-    bottom: 10px;
-    left: 10px;
+    padding-right: 30%;
+    bottom: 20px;
+    left: 20px;
     color: $white;
     display: grid;
     justify-content: left;
     align-items:center;
-    border-radius: 10px;
-    opacity: 1;
+
   }
   img {
     position:absolute;
     top:0;
     left:0;
-    height: 200px;
-    width: 335px;
+    height: 100%;
+    width: 100%;
     object-fit: cover;
-    border-radius: 10px 10px 0 0;
+    border-radius: 10px;
   }
 }

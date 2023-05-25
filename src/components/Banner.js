@@ -1,10 +1,10 @@
 import React from 'react'
-// import HomeBackground from '../assets/img/main.png'
 
-const Banner = () => {
+const Banner = ({ text, src }) => {
   return (
     <div className="banner">
-      <h3>Chez vous, partout et ailleurs</h3>
+      <h3 className="banner_text">{text}</h3>
+      <img src={src} alt="Bannière" className="banner_img" />
     </div>
   )
 }
