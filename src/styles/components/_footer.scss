@@ -1,20 +1,19 @@
 .footer {
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position:absolute;
-    gap:30px;
-    padding-top: 70px;
-    padding-bottom: 20px;
-    background-color: #000000 ;
-    width:100%;
-    font-size:24px;
-    font-weight: 400;
-    font-style: normal;
-    color:white;
-    margin-top: auto;
-    img {
-        width:120px;
-    }
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  padding-top: 70px;
+  padding-bottom: 20px;
+  background-color: #000000;
+  width: 100%;
+  font-size: 24px;
+  font-weight: 400;
+  font-style: normal;
+  color: white;
+  margin-top: 90px;
+  img {
+    width: 120px;
+  }
 }

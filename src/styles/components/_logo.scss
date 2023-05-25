@@ -2,13 +2,12 @@
   @include alignLeft;
   width: 115px;
   padding: 5px 0;
-  // background: url(../../assets/img/main.png) center/cover;
 
   img {
     height: 30px;
   }
   h3 {
     margin-left: 10px;
-    color: $color-red
+    color: $color-red;
   }
 }
