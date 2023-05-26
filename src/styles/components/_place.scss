@@ -1,0 +1,13 @@
+.place {
+  width: 100%;
+  position: relative;
+}
+.details {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  &_dropdown {
+    width: 50%;
+  }
+}
