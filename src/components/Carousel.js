@@ -8,7 +8,9 @@ const Carousel = ({ pictures }) => {
   const [currentIndex, setCurrentIndex] = useState(0)
 
   const sliderStyles = {
+    width: '100%',
     height: '100%',
+    margin: '0 auto',
     position: 'relative',
   }
 
@@ -26,7 +28,6 @@ const Carousel = ({ pictures }) => {
     position: 'absolute',
     top: '50%',
     transform: 'translate(0, -50%)',
-    transition: 'all 500ms',
     color: '#ffffff',
     left: '32px',
     fontSize: '48px',
@@ -36,13 +37,21 @@ const Carousel = ({ pictures }) => {
   const rightArrowStyles = {
     position: 'absolute',
     top: '50%',
-    transform: 'translate(0, -50%) 500ms',
-    transition: 'all 500ms',
+    transform: 'translate(0, -50%)',
     color: '#ffffff',
     right: '32px',
     fontSize: '48px',
     zIndex: '1',
     cursor: 'pointer',
+  }
+  const counter = {
+    position: 'absolute',
+    left: '50%',
+    bottom: '20px',
+    color: '#ffffff',
+    fontSize: '15px',
+    zIndex: '1',
+    textAlign: 'left',
   }
 
   const goToPrevious = () => {
@@ -59,11 +68,26 @@ const Carousel = ({ pictures }) => {
 
   return (
     <div style={sliderStyles}>
-      <div style={leftArrowStyles} onClick={goToPrevious}>
-        <FontAwesomeIcon icon={faAngleLeft} style={{ color: '#ffffff' }} />
-      </div>
-      <div style={rightArrowStyles} onClick={goToNext}>
-        <FontAwesomeIcon icon={faAngleRight} style={{ color: '#ffffff' }} />
+      <div>
+        {pictures.length > 1 && (
+          <>
+            <div style={leftArrowStyles} onClick={goToPrevious}>
+              <FontAwesomeIcon
+                icon={faAngleLeft}
+                style={{ color: '#ffffff' }}
+              />
+            </div>
+            <div style={rightArrowStyles} onClick={goToNext}>
+              <FontAwesomeIcon
+                icon={faAngleRight}
+                style={{ color: '#ffffff' }}
+              />
+            </div>
+            <div style={counter}>
+              {currentIndex + 1} / {pictures.length}
+            </div>
+          </>
+        )}
       </div>
 
       <div style={slideStyle}></div>
