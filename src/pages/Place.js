@@ -23,8 +23,8 @@ const Place = () => {
 
   return (
     <div>
-      <Header />
       <div className="place">
+        <Header />
         <div className="container-styles">
           <Carousel pictures={pictures} />
         </div>
@@ -55,21 +55,20 @@ const Place = () => {
             </div>
           </div>
         </div>
+        <div className="lesdetails">
+          <div className="details__dropdown">
+            <Dropdown title="Description" text={logement.description} />
+          </div>
+          <div className="details__dropdown">
+            <Dropdown
+              title="Équipement"
+              text={logement.equipments.map((equipement, index) => (
+                <p key={index}>{equipement}</p>
+              ))}
+            />
+          </div>
+        </div>
       </div>
-
-      <section className="details">
-        <div className="details_dropdown">
-          <Dropdown title="Description" text={logement.description} />
-        </div>
-        <div className="details_dropdown">
-          <Dropdown
-            title="Équipement"
-            text={logement.equipments.map((equipement, index) => (
-              <p key={index}>{equipement}</p>
-            ))}
-          />
-        </div>
-      </section>
 
       <Footer />
     </div>

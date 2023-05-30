@@ -1,10 +1,13 @@
 @import './settings';
+@import './pages/home';
+@import './pages/about';
+@import './pages/place';
 @import './components/header';
 @import './components/banner';
 @import './components/footer';
-@import './components/place';
 @import './components/rating';
 @import './components/dropdown';
+
 @import './components/navigation';
 @import './components/logo';
 @import './components/gallery';

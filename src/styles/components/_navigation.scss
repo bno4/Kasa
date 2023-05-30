@@ -5,15 +5,14 @@
 
     a {
       text-decoration: none;
-
-      padding: 0px 20px;
+      margin-left: 20px;
 
       li {
         color: $color-red;
         display: inline-block;
         transition: 0.2s;
         cursor: pointer;
-position: relative;
+        position: relative;
         &:hover {
           color: $color-red;
         }
@@ -24,7 +23,7 @@ position: relative;
       position: relative;
 
       &::after {
-        content: "";
+        content: '';
         height: 1px;
         width: 0%;
         background: $color-red;
@@ -38,12 +37,12 @@ position: relative;
 
         @-webkit-keyframes anim {
           to {
-            width: 65%;
+            width: 99%;
           }
         }
         @keyframes anim {
           to {
-            width: 65%;
+            width: 99%;
           }
         }
       }

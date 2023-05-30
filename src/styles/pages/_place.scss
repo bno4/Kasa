@@ -83,12 +83,14 @@
   }
 }
 
-.details {
+.lesdetails {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+  width: 100% !important;
+  margin-top: 30px;
 
-  &_dropdown {
+  &__dropdown {
     width: 50%;
   }
 }

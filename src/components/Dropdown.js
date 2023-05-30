@@ -1,7 +1,9 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faChevronDown } from '@fortawesome/free-solid-svg-icons'
-import { faChevronUp } from '@fortawesome/free-solid-svg-icons'
+import { faChevronDown, faChevronUp } from '@fortawesome/free-solid-svg-icons'
+
+const chevronUp = <FontAwesomeIcon icon={faChevronUp} />
+const chevronDown = <FontAwesomeIcon icon={faChevronDown} />
 
 const Dropdown = ({ title, text }) => {
   const [open, setOpen] = React.useState(false)
@@ -11,26 +13,13 @@ const Dropdown = ({ title, text }) => {
   }
   return (
     <div className="dropdown">
-      <div className="dropdown_bar" onClick={handleOpen}>
+      <div className="dropdown__bar" onClick={handleOpen}>
         <div>{title}</div>
-        <div>
-          {open ? (
-            <div>
-              {' '}
-              <FontAwesomeIcon icon={faChevronUp} />
-            </div>
-          ) : (
-            <div>
-              <FontAwesomeIcon icon={faChevronDown} />
-            </div>
-          )}
-        </div>
+        <div>{open ? <div>{chevronUp}</div> : <div>{chevronDown}</div>}</div>
       </div>
-      {open ? (
-        <ul className="menu">
-          <li className="menu-item">{text}</li>
-        </ul>
-      ) : null}
+      <div className={open ? 'dropdown__menu' : 'dropdown__menu__off'}>
+        {text}
+      </div>
     </div>
   )
 }
