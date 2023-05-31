@@ -55,7 +55,7 @@ const Place = () => {
             </div>
           </div>
         </div>
-        <div className="lesdetails">
+        <div className="details">
           <div className="details__dropdown">
             <Dropdown title="Description" text={logement.description} />
           </div>

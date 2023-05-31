@@ -17,7 +17,9 @@ const Dropdown = ({ title, text }) => {
         <div>{title}</div>
         <div>{open ? <div>{chevronUp}</div> : <div>{chevronDown}</div>}</div>
       </div>
-      <div className={open ? 'dropdown__menu' : 'dropdown__menu__off'}>
+      <div
+        className={open ? 'dropdown__bar__menu' : 'dropdown__bar__menu__off'}
+      >
         {text}
       </div>
     </div>
