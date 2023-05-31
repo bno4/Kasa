@@ -18,3 +18,10 @@
     width: 120px;
   }
 }
+@media screen and (max-width: 768px) {
+  // Design tablette de l'index.html
+
+  .footer {
+    margin-top: 20px;
+  }
+}

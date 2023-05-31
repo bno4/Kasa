@@ -1,6 +1,10 @@
 .about-content {
-  margin-left: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0 auto;
   margin-right: 100px;
+  margin-left: 100px;
 }
 
 .mentions {
@@ -10,8 +14,19 @@
   align-items: center;
   width: 85%;
   margin: 30px auto;
-  gap: 40px;
+  gap: 20px;
   &__drop {
     margin-top: 30px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .about-content {
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+  .mentions {
+    width: 100%;
+    margin: 0px auto;
   }
 }
