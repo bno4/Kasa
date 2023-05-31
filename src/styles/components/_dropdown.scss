@@ -11,13 +11,14 @@
     border-radius: 10px;
     cursor: pointer;
     z-index: 1;
+    font-size: 1.5em;
     position: relative;
 
     &__menu {
       background-color: #f7f7f7;
       opacity: 1;
       position: relative;
-      top: -10px;
+      top: -15px;
       z-index: -1;
       height: auto;
       padding: 30px 20px;

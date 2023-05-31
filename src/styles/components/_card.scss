@@ -6,6 +6,10 @@
   height: 340px;
   border-radius: 10px;
   box-shadow: 1px 1px 1px 0.1px rgba(0, 0, 0, 0.2);
+  transition: all 300ms ease-in-out;
+  &:hover {
+    transform: scale(1.03) rotate(1deg);
+  }
 
   &_infos {
     position: absolute;
@@ -43,5 +47,9 @@
     width: 100%;
     object-fit: cover;
     border-radius: 10px;
+    transition: all 1s ease-in-out;
+  }
+  &:hover {
+    filter: brightness(110%);
   }
 }
