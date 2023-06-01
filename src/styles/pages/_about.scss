@@ -1,22 +1,28 @@
+.about-page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
 .about-content {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   margin: 0 auto;
   margin-right: 100px;
   margin-left: 100px;
+  position: relative;
+  margin-bottom: 30px;
 }
 
 .mentions {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: stretch;
   width: 85%;
-  margin: 30px auto;
-  gap: 20px;
+  margin: 10px auto;
+  gap: 25px;
   &__drop {
-    margin-top: 30px;
+    margin-top: 10px;
   }
 }
 
@@ -28,5 +34,9 @@
   .mentions {
     width: 100%;
     margin: 0px auto;
+    gap: 10px;
+    &__drop {
+      margin-top: 5px;
+    }
   }
 }

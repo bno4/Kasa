@@ -22,9 +22,19 @@ $white: #ffffff;
   box-sizing: border-box;
 }
 
+html {
+  height: 100%;
+}
+
 body {
   background: $white;
   font-family: $font-1;
+  max-width: 1440px;
+  margin: 0 auto;
+  height: 100%;
+}
+#root {
+  height: 100%;
 }
 li {
   list-style-type: none;

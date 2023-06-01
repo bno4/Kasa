@@ -1,5 +1,8 @@
 .home-content {
   margin: 0 100px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
 @media screen and (max-width: 768px) {

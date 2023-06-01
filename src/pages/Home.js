@@ -13,7 +13,6 @@ const Home = () => {
         <Banner text="Chez vous, partout et ailleurs" src={HomeBg} />
         <Gallery />
       </div>
-
       <Footer />
     </div>
   )

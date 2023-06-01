@@ -1,3 +1,9 @@
+.place-home {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
 .place {
   position: relative;
   margin-left: 100px;

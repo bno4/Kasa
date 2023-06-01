@@ -6,7 +6,7 @@ import Footer from '../components/Footer'
 import Carousel from '../components/Carousel'
 import Rating from '../components/Rating'
 import Dropdown from '../components/Dropdown'
-import ErrorLayout from '../components/ErrorLayout'
+import Error from '../pages/Error'
 
 const Place = () => {
   const { id } = useParams()
@@ -15,14 +15,14 @@ const Place = () => {
   if (logement === undefined) {
     return (
       <div>
-        <ErrorLayout />
+        <Error />
       </div>
     )
   }
   const pictures = logement.pictures
 
   return (
-    <div>
+    <div className="place-home">
       <div className="place">
         <Header />
         <div className="container-styles">

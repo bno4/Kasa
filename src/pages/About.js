@@ -7,7 +7,7 @@ import AboutBg from '../assets/img/about.png'
 
 const About = () => {
   return (
-    <div>
+    <div className="about-page">
       <div className="about-content">
         <Header />
         <Banner src={AboutBg} />
