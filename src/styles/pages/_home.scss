@@ -1,8 +1,17 @@
-.home-content {
-  margin: 0 100px;
+.home-page {
   display: flex;
   flex-direction: column;
-  height: 100%;
+  min-height: 100vh;
+}
+.home-content {
+  max-width: 1440px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  margin-right: 100px;
+  margin-left: 100px;
+  position: relative;
+  margin-bottom: 30px;
 }
 
 @media screen and (max-width: 768px) {

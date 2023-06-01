@@ -9,7 +9,6 @@ const Card = ({ logement }) => {
           className="card_pict"
           src={logement.cover}
           alt={'Intérieur de' + logement.title}
-          loading={'lazy'}
         />
         <div className="card_infos">
           <p>{logement.title}</p>

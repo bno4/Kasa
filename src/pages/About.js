@@ -10,7 +10,7 @@ const About = () => {
     <div className="about-page">
       <div className="about-content">
         <Header />
-        <Banner src={AboutBg} />
+        <Banner src={AboutBg} text={''} />
         <div className="mentions">
           <Dropdown
             title="Fiabilité"
