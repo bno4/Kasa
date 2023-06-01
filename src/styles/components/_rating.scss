@@ -1,7 +1,27 @@
+.rating-stars {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
 .star {
   color: $color-red;
   font-size: 18px;
   &__grey {
     color: grey;
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .rating-stars {
+    gap: 5px;
+  }
+
+  .star {
+    font-size: 13px;
+    &__grey {
+      font-size: 13px;
+    }
   }
 }

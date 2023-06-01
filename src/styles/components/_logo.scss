@@ -1,13 +1,21 @@
 .logo {
   @include alignLeft;
-  width: 115px;
+  width: 140px;
   padding: 5px 0;
 
   img {
-    height: 30px;
+    width: 200px;
   }
   h3 {
     margin-left: 10px;
     color: $color-red;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .logo {
+    img {
+      width: 100%;
+    }
   }
 }
