@@ -3,12 +3,18 @@
   src: url(../assets/fonts/Montserrat-Regular.ttf);
 }
 
-$font-1: 'font-1', sans-serif;
+@font-face {
+  font-family: 'font-2';
+  src: url(../assets/fonts/Montserrat-Bold.ttf);
+}
 
-$color-red: #ff6060;
+$font-1: 'font-1', sans-serif;
+$font-2: 'font-2', sans-serif;
+
+$color-1: #ff6060;
 $color-2: #f7f7f7;
 $color-3: #282c34;
-$white: #ffffff;
+$color-4: #ffffff;
 
 @mixin alignLeft {
   display: flex;
@@ -27,13 +33,22 @@ html {
 }
 
 body {
-  background: $white;
+  background: $color-4;
   font-family: $font-1;
   margin: 0 auto;
 }
 #root {
   height: 100%;
 }
+
+.main-wrapper {
+  display: flex;
+  flex-direction: column;
+  max-width: 1440px;
+  margin: 0 auto;
+  min-height: 100vh;
+}
+
 li {
   list-style-type: none;
 }

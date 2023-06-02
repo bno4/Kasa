@@ -6,13 +6,14 @@ import Footer from '../components/Footer'
 const Error = () => {
   return (
     <div>
-      <div className="error-page">
-        <Header />
-        <ErrorLayout />
+      <div className="main-wrapper">
+        <div className="error-page">
+          <Header />
+          <ErrorLayout />
+        </div>
       </div>
       <Footer />
     </div>
   )
 }
-
 export default Error

@@ -4,10 +4,10 @@
   margin-bottom: 30px;
 
   &__bar {
-    color: $white;
+    color: $color-4;
     display: flex;
     justify-content: space-between;
-    background-color: $color-red;
+    background-color: $color-1;
     padding: 10px;
     border-radius: 10px;
     cursor: pointer;
@@ -25,7 +25,7 @@
       padding: 30px 20px;
       font-size: 18px;
       line-height: 27px;
-      color: $color-red;
+      color: $color-1;
       transition: all 200ms ease-in-out;
       animation: growDown 200ms ease-in-out forwards;
       transform-origin: top center;
@@ -33,7 +33,7 @@
 
       &__off {
         height: 0;
-        color: $color-red;
+        color: $color-1;
         font-size: 14px;
         padding: 0 20px;
         opacity: 0;

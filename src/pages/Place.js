@@ -23,7 +23,7 @@ const Place = () => {
 
   return (
     <div>
-      <div className="place-home">
+      <div className="main-wrapper">
         <div className="place">
           <Header />
           <div className="container-styles">

@@ -8,14 +8,14 @@
       margin-left: 50px;
 
       li {
-        color: $color-red;
+        color: $color-1;
         display: inline-block;
         transition: 0.2s;
         cursor: pointer;
         position: relative;
         font-size: 1.3em;
         &:hover {
-          color: $color-red;
+          color: $color-1;
         }
       }
     }
@@ -27,7 +27,7 @@
         content: '';
         height: 1px;
         width: 0%;
-        background: $color-red;
+        background: $color-1;
         position: absolute;
         border-radius: 0px;
         bottom: 0px;

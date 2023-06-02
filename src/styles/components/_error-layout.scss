@@ -1,24 +1,38 @@
 .error404 {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  margin-top: 100px;
+  margin-bottom: 100px;
   align-items: center;
-  color: $color-red;
+  color: $color-1;
 }
 
 .error404 h1 {
-  margin-top: 100px;
-  font-weight: 700;
+  font-family: $font-2;
+  font-weight: bolder;
   font-size: 288px;
 }
 
+.error404 p {
+  text-align: center;
+  font-size: 36px;
+  margin-top: 60px;
+}
+
 .error404 a {
-  margin-top: 200px;
+  margin-top: 170px;
+  font-size: 18px;
   text-decoration: underline;
-  color: $color-red;
+  color: $color-1;
+  text-align: center;
 }
 @media screen and (max-width: 768px) {
   .error404 h1 {
     font-size: 96px;
+  }
+  .error404 p {
+    text-align: center;
+    font-size: 18px;
+    margin: 5px 30px;
   }
 }
