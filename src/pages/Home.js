@@ -7,11 +7,13 @@ import HomeBg from '../assets/img/main.png'
 
 const Home = () => {
   return (
-    <div className="home-page">
-      <div className="home-content">
-        <Header />
-        <Banner text="Chez vous, partout et ailleurs" src={HomeBg} />
-        <Gallery />
+    <div>
+      <div className="home-page">
+        <div className="home-content">
+          <Header />
+          <Banner text="Chez vous, partout et ailleurs" src={HomeBg} />
+          <Gallery />
+        </div>
       </div>
       <Footer />
     </div>

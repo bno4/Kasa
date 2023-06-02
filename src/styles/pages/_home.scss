@@ -1,21 +1,22 @@
 .home-page {
   display: flex;
   flex-direction: column;
+  max-width: 1440px;
   min-height: 100vh;
+  margin: 0 auto;
 }
 .home-content {
-  max-width: 1440px;
   display: flex;
   flex-direction: column;
   margin: 0 auto;
   margin-right: 100px;
   margin-left: 100px;
-  position: relative;
   margin-bottom: 30px;
 }
 
 @media screen and (max-width: 768px) {
   .home-content {
-    margin: 0 20px;
+    margin-right: 20px;
+    margin-left: 20px;
   }
 }

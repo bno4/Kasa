@@ -25,16 +25,10 @@ const Carousel = ({ pictures }) => {
         {pictures.length > 1 && (
           <>
             <div className="left-arrow" onClick={goToPrevious}>
-              <FontAwesomeIcon
-                icon={faAngleLeft}
-                style={{ color: '#ffffff' }}
-              />
+              <FontAwesomeIcon icon={faAngleLeft} />
             </div>
             <div className="right-arrow" onClick={goToNext}>
-              <FontAwesomeIcon
-                icon={faAngleRight}
-                style={{ color: '#ffffff' }}
-              />
+              <FontAwesomeIcon icon={faAngleRight} />
             </div>
             <div className="counter">
               {currentIndex + 1} / {pictures.length}

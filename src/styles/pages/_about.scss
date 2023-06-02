@@ -1,16 +1,16 @@
 .about-page {
   display: flex;
   flex-direction: column;
+  max-width: 1440px;
+  margin: 0 auto;
   min-height: 100vh;
 }
 .about-content {
-  max-width: 1440px;
   display: flex;
   flex-direction: column;
   margin: 0 auto;
   margin-right: 100px;
   margin-left: 100px;
-  position: relative;
   margin-bottom: 30px;
 }
 
