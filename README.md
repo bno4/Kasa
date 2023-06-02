@@ -13,9 +13,3 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
-
-### Add FontAwesome in React
-
-yarn add @fortawesome/fontawesome-svg-core  
-yarn add @fortawesome/free-solid-svg-icons  
-yarn add @fortawesome/react-fontawesome
